@@ -99,7 +99,8 @@ figure {
 }
 
 figcaption {
-    font-size: .75rem;
+    font-weight: bold;
+    color: orange;
     margin: .5rem 0 0;
 }
 
