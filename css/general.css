@@ -1,5 +1,25 @@
 @charset "utf-8";
 
+/*
+
+Shorthand:
+
+margin: 40px; all 4 sides
+margin: 40px auto; top/bottom right/left
+margin: 10px auto 0; top right/left bottom
+margin: 40px 30px 5px 10px; top right bottom left
+
+Start at the top, then continue clockwise around the box.
+
+Units of Measurement
+
+Width = %
+Hight = rem
+Type = rem
+Graphic = px (e.g. border would be "graphic")
+
+*/
+
 @-moz-viewport { width: device-width; scale: 1; }
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
@@ -18,10 +38,76 @@ html {
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
     
+    /* Controls the type size */
+    
     font-size: 100%;
+    
+    font-family: Cambria, "Times New Roman", serif
 }
 
-img {
+img { /* image is responsize to screen size */
 	width: 100%;
     display: block;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.masthead {
+    background-color: orange;
+    overflow: hidden;
+}
+
+.logo {
+    height: 4.5rem;
+    width: auto;
+    margin: .5rem 5%;
+}
+
+article {
+    margin: 0;
+    padding: 0 5%;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: Optima, sans-serif;
+    margin: 1.5rem 0;
+    font-size: 4rem;
+    line-height: 3.5rem;
+    color: orange;
+}
+
+h2 {
+    font-family: Optima, sans-serif;
+    color: orange;
+}
+
+img + p {
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.5;
+}
+
+figure {
+    margin: 0 auto 1.5rem;
+    width: 100%;
+}
+
+figcaption {
+    font-size: .75rem;
+    margin: .5rem 0 0;
+}
+
+footer {
+    background-color: orange;
+    overflow: hidden;
+}
+
+footer p {
+    margin: .5rem 5% 5rem
 }
